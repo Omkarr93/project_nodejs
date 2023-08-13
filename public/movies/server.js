@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 app.get('/', (req, res) => {
-  // Handle Movies server logic here
-  res.send('Movies server is running');
+  // Serve the movies.html file
+  res.sendFile(path.join(__dirname, 'movies.html'));
 });
 
 app.get('/status', (req, res) => {
@@ -13,3 +14,4 @@ app.get('/status', (req, res) => {
 app.listen(3001, () => {
   console.log('Movies server is running on http://localhost:3001');
 });
+

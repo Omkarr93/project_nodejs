@@ -41,6 +41,7 @@ app.get('/movies', (req, res) => {
 // Redirect to Live Shows server
 app.get('/liveshows', (req, res) => {
   res.redirect('http://localhost:3002');
+  // app.get('www.hotstar.com/in/onboarding/profile?ref=%2Fin');
 });
 
 // Redirect to Web Series server
