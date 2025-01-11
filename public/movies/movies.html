@@ -1,3 +1,64 @@
-<html><body>
-    this is html page for movies
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #e50914;
+        }
+        .movie-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .movie-list li {
+            margin: 10px;
+            font-size: 1.2em;
+            list-style: none;
+        }
+        .movie-cover {
+            width: 150px;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .movie-cover:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Movies Server</h1>
+    <p>Here you can find a list of our available movies:</p>
+    <ul class="movie-list">
+        <li>
+            <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" alt="Inception" class="movie-cover">
+            <p>Inception</p>
+        </li>
+        <li>
+            <img src="https://m.media-amazon.com/images/I/51oBxmV-dML._AC_SY679_.jpg" alt="The Dark Knight" class="movie-cover">
+            <p>The Dark Knight</p>
+        </li>
+        <li>
+            <img src="https://m.media-amazon.com/images/I/81G+7+s9qGL._AC_SY679_.jpg" alt="Interstellar" class="movie-cover">
+            <p>Interstellar</p>
+        </li>
+        <li>
+            <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL._AC_SY679_.jpg" alt="Avengers: Endgame" class="movie-cover">
+            <p>Avengers: Endgame</p>
+        </li>
+    </ul>
+</body>
+</html>

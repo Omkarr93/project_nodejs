@@ -6,6 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="login.css"> <!-- Add this line -->
+  <style>
+    .login-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .login-form {
+      display: inline-block;
+      text-align: left;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    .login-form label, .login-form input, .login-form button {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .login-form button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background-color: #45a049;
+    }
+    .create-account {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <div class="login-container">
@@ -17,6 +49,10 @@
       <input type="password" id="password" name="password" required>
       <button type="submit">Login</button>
     </form>
+    <div class="create-account">
+      <p>Don't have an account?</p>
+      <button onclick="window.location.href='/create-account'">Create Account</button>
+    </div>
   </div>
 </body>
 </html>

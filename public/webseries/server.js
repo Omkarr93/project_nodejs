@@ -1,9 +1,12 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 
+// Serve static files
+app.use(express.static(path.join(__dirname)));
+
 app.get('/', (req, res) => {
-  // Handle Movies server logic here
-  res.send('webseries server is running');
+  res.sendFile(path.join(__dirname, 'webseries.html'));
 });
 
 app.get('/status', (req, res) => {
@@ -11,5 +14,5 @@ app.get('/status', (req, res) => {
 });
 
 app.listen(3003, () => {
-  console.log('webseries server is running on http://localhost:3001');
+  console.log('webseries server is running on http://localhost:3003');
 });

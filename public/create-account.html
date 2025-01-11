@@ -1,0 +1,53 @@
+<!-- public/create-account.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="login.css"> <!-- Use the same CSS file as login page for consistency -->
+  <style>
+    .create-account-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .create-account-form {
+      display: inline-block;
+      text-align: left;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    .create-account-form label, .create-account-form input, .create-account-form button {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .create-account-form button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .create-account-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="create-account-container">
+    <h1>Create Account</h1>
+    <form class="create-account-form" action="/register" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</body>
+</html>

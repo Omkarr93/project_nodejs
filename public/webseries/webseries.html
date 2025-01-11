@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Series Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #e50914;
+        }
+        .webseries-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .webseries-list li {
+            margin: 10px;
+            font-size: 1.2em;
+            list-style: none;
+        }
+        .webseries-cover {
+            width: 150px;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .webseries-cover:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Web Series Server</h1>
+    <p>Here you can find a list of our available web series:</p>
+    <ul class="webseries-list">
+        <li>
+            <img src="https://i.imgur.com/MskWr2d.jpeg" alt="Stranger Things" class="webseries-cover">
+            <p>Stranger Things</p>
+        </li>
+        <li>
+            <img src="https://i.imgur.com/QZYbnu8.jpeg" alt="Breaking Bad" class="webseries-cover">
+            <p>Breaking Bad</p>
+        </li>
+        <li>
+            <img src="https://i.imgur.com/5o7SBBs.jpeg" alt="Game of Thrones" class="webseries-cover">
+            <p>Game of Thrones</p>
+        </li>
+        <li>
+            <img src="https://i.imgur.com/3CiVKKp.jpeg" alt="The Witcher" class="webseries-cover">
+            <p>The Witcher</p>
+        </li>
+    </ul>
+</body>
+</html>

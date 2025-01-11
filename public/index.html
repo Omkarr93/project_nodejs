@@ -11,26 +11,25 @@
       margin: 0;
       padding: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      border: 20px solid #2f9492; /* Add solid border */
-      position: relative; /* Add relative positioning */
-    }
-    
-    h1 {
-      font-size: 80px; /* 24*/
-      margin: 100px; /* Adjust margin for position */
-      position: absolute; /* Use absolute positioning */
-      top: 50px; /* Position at the top */
-      left: 0; /* Position at the left */
+      border: 20px solid #2f9492;
     }
 
-    button {
+    h1 {
+      font-size: 2.5rem;
+      margin: 2rem 0;
+    }
+
+    .button {
+      display: inline-block;
       padding: 10px 20px;
       font-size: 18px;
       background-color: #007bff;
       color: white;
+      text-decoration: none;
       border: none;
       border-radius: 5px;
       margin: 10px;
@@ -38,15 +37,15 @@
       transition: background-color 0.3s;
     }
 
-    button:hover {
+    .button:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to the Entertainment</h1>
-  <button onclick="window.location.href='/movies'">Movies</button>
-  <button onclick="window.location.href='/liveshows'">Live Shows</button>
-  <button onclick="window.location.href='/webseries'">Web series</button>
+  <a href="/movies" class="button" aria-label="Navigate to movies section">Movies</a>
+  <a href="/liveshows" class="button" aria-label="Navigate to live shows section">Live Shows</a>
+  <a href="/webseries" class="button" aria-label="Navigate to web series section">Web Series</a>
 </body>
 </html>
